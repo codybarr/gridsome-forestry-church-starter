@@ -1,4 +1,29 @@
 ---
 label: Sermon
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Sermon title
+- name: author
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: 
+      file: 
+      path: 
+  label: Author
+  description: Who preached this sermon?
+- name: audio
+  type: file
+  config:
+    maxSize: 250
+  label: Audio
+  description: Sermon audio file
